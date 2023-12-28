@@ -1,0 +1,256 @@
+@import "node_modules/bootstrap/scss/functions";
+
+$prefix:    bs-;
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$blue: #0d6efd;
+$orange: #e79e00;
+$yellow: #fef200;
+$secondary: $gray-500;
+$warning: $orange;
+$link-decoration: none;
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    35: $spacer * 1.25,
+    4: $spacer * 1.5,
+    45: $spacer * 2.4,
+    5: $spacer * 3,
+);
+$primary:               $blue;
+$focus-ring-width:      .05rem;
+$focus-ring-opacity:    .75;
+$focus-ring-color:      rgba($primary, $focus-ring-opacity);
+$focus-ring-blur:       0;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
+$input-bg:              $gray-200;
+$input-focus-bg:        $white;
+
+$utilities: (
+    "width": (
+        responsive: true,
+        property: width,
+        class: w,
+        values: (
+            20: 20%,
+            25: 25%,
+            50: 50%,
+            60: 60%,
+            65: 65%,
+            75: 75%,
+            80: 80%,
+            85: 85%,
+            90: 90%,
+            95: 95%,
+            99: 99%,
+            100: 100%,
+            auto: auto
+        )
+    ),
+    "viewport-width": (
+        responsive: true,
+        property: width,
+        class: vw,
+        values: (
+            98: 98vw,
+            99: 99vw,
+            100: 100vw
+        )
+    ),
+    "height": (
+        responsive: true,
+        property: height,
+        class: h,
+        values: (
+            25: 25%,
+            50: 50%,
+            55: 55%,
+            60: 60%,
+            75: 75%,
+            100: 100%,
+            auto: auto
+        )
+    ),
+    "viewport-height": (
+        responsive: true,
+        property: height,
+        class: vh,
+        values: (
+            30: 30vh,
+            40: 40vh,
+            50: 50vh,
+            55: 55vh,
+            60: 60vh,
+            65: 65vh,
+            70: 70vh,
+            75: 75vh,
+            95: 95vh,
+            100: 100vh
+        )
+    ),
+    "min-viewport-height": (
+        responsive: true,
+        property: min-height,
+        class: min-vh,
+        values: (
+            90: 90vh,
+            95: 95vh,
+            98: 98vh,
+            100: 100vh
+        )
+    ),
+    "border": (
+        responsive: true,
+        property: border,
+        values: (
+            null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+            0: 0,
+        )
+    ),
+    "border-top": (
+        responsive: true,
+        property: border-top,
+        values: (
+            null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+            0: 0,
+        )
+    ),
+    "border-end": (
+        responsive: true,
+        property: border-right,
+        class: border-end,
+        values: (
+            null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+            0: 0,
+        )
+    ),
+    "border-bottom": (
+        responsive: true,
+        property: border-bottom,
+        values: (
+            null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+            0: 0,
+        )
+    ),
+    "border-start": (
+        responsive: true,
+        property: border-left,
+        class: border-start,
+        values: (
+            null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+            0: 0,
+        )
+    ),
+    "border-end-item": (
+        responsive: true,
+        property: border-right-style,
+        class: border-end-item,
+        values: (
+            null: var(--#{$prefix}border-style),
+            none: none,
+        )
+    ),
+    "border-start-item": (
+        responsive: true,
+        property: border-left-style,
+        class: border-start-item,
+        values: (
+            null: var(--#{$prefix}border-style),
+            none: none,
+        )
+    ),
+    "rounded": (
+        responsive: true,
+        property: border-radius,
+        class: rounded,
+        values: (
+            null: var(--#{$prefix}border-radius),
+            0: 0,
+            1: var(--#{$prefix}border-radius-sm),
+            2: var(--#{$prefix}border-radius),
+            3: var(--#{$prefix}border-radius-lg),
+            4: var(--#{$prefix}border-radius-xl),
+            5: var(--#{$prefix}border-radius-xxl),
+            circle: 50%,
+            pill: var(--#{$prefix}border-radius-pill)
+        )
+    ),
+    "rounded-top": (
+        responsive: true,
+        property: border-top-left-radius border-top-right-radius,
+        class: rounded-top,
+        values: (
+            null: var(--#{$prefix}border-radius),
+            0: 0,
+            1: var(--#{$prefix}border-radius-sm),
+            2: var(--#{$prefix}border-radius),
+            3: var(--#{$prefix}border-radius-lg),
+            4: var(--#{$prefix}border-radius-xl),
+            5: var(--#{$prefix}border-radius-xxl),
+            circle: 50%,
+            pill: var(--#{$prefix}border-radius-pill)
+        )
+    ),
+    "rounded-end": (
+        responsive: true,
+        property: border-top-right-radius border-bottom-right-radius,
+        class: rounded-end,
+        values: (
+            null: var(--#{$prefix}border-radius),
+            0: 0,
+            1: var(--#{$prefix}border-radius-sm),
+            2: var(--#{$prefix}border-radius),
+            3: var(--#{$prefix}border-radius-lg),
+            4: var(--#{$prefix}border-radius-xl),
+            5: var(--#{$prefix}border-radius-xxl),
+            circle: 50%,
+            pill: var(--#{$prefix}border-radius-pill)
+        )
+    ),
+    "rounded-bottom": (
+        responsive: true,
+        property: border-bottom-right-radius border-bottom-left-radius,
+        class: rounded-bottom,
+        values: (
+            null: var(--#{$prefix}border-radius),
+            0: 0,
+            1: var(--#{$prefix}border-radius-sm),
+            2: var(--#{$prefix}border-radius),
+            3: var(--#{$prefix}border-radius-lg),
+            4: var(--#{$prefix}border-radius-xl),
+            5: var(--#{$prefix}border-radius-xxl),
+            circle: 50%,
+            pill: var(--#{$prefix}border-radius-pill)
+        )
+    ),
+    "rounded-start": (
+        responsive: true,
+        property: border-bottom-left-radius border-top-left-radius,
+        class: rounded-start,
+        values: (
+            null: var(--#{$prefix}border-radius),
+            0: 0,
+            1: var(--#{$prefix}border-radius-sm),
+            2: var(--#{$prefix}border-radius),
+            3: var(--#{$prefix}border-radius-lg),
+            4: var(--#{$prefix}border-radius-xl),
+            5: var(--#{$prefix}border-radius-xxl),
+            circle: 50%,
+            pill: var(--#{$prefix}border-radius-pill)
+        )
+    ),
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,23 @@
+@media screen and (orientation: portrait) {
+    body {
+        min-height: 125vh;
+    }
+    #yellow-box {
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+    #login-box {
+        top: -150px;
+    }
+}
+@media screen and (orientation: landscape) {
+    #yellow-box {
+        border-bottom-left-radius: 70px;
+        border-top-left-radius: 70px;
+    }
+    #login-box {
+        left: 70px;
+        opacity: .9;
+    }
+}
+

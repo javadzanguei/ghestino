@@ -1,0 +1,70 @@
+@import 'bootstrap-dark-plugin.min.css';
+@import 'fonts.css';
+
+body * {
+    font-family: Vazir, "Segoe UI", Calibri, system-ui !important;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+    font-family: VazirBold, system-ui !important;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 3rem;
+}
+
+.body-dark {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+.bg-yellow {
+    background-color: var(--bs-yellow) !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #444 !important;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    border-top-right-radius: 5px!important;
+    border-bottom-right-radius: 5px!important;
+}
+.input-group span {
+    border-top-left-radius: 5px!important;
+    border-bottom-left-radius: 5px!important;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    --bs-focus-ring-width: 0 !important;
+}
+
+.input-group {
+    border-radius: 5px !important;
+}
+
+.input-group:focus-within {
+    outline: 2px solid var(--bs-blue);
+    border-radius: 5px;
+}
+.input-group:focus-within *:focus {
+    outline: 0 !important;
+}
+.input-group input,
+.input-group span {
+    border: none;
+    background-color: white;
+}

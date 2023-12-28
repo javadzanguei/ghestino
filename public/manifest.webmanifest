@@ -1,0 +1,100 @@
+{
+	"short_name" : "بارسلون",
+	"name" : "مرکز فنی بارسلون",
+	"description": "مدیریت سرویس مرکز فنی بارسلون",
+	"id" : "/",
+	"icons" : [
+		{
+			"src": "\/assets/images/android-icon-36x36.png",
+			"sizes": "36x36",
+			"type": "image\/png",
+			"density": "0.75"
+		},
+		{
+			"src": "\/assets/images/android-icon-48x48.png",
+			"sizes": "48x48",
+			"type": "image\/png",
+			"density": "1.0"
+		},
+		{
+			"src": "\/assets/images/android-icon-72x72.png",
+			"sizes": "72x72",
+			"type": "image\/png",
+			"density": "1.5"
+		},
+		{
+			"src": "\/assets/images/android-icon-96x96.png",
+			"sizes": "96x96",
+			"type": "image\/png",
+			"density": "2.0"
+		},
+		{
+			"src": "\/assets/images/android-icon-144x144.png",
+			"sizes": "144x144",
+			"type": "image\/png",
+			"density": "3.0"
+		},
+		{
+			"src": "\/assets/images/android-icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image\/png",
+			"density": "4.0"
+		}
+	],
+	"start_url" : "/",
+	"background_color" : "#fef200",
+	"display" : "standalone",
+	"display_override" : ["window-control-overlay", "minimal-ui"],
+	"theme_color": "#fef200",
+	"shortcuts": [
+		{
+			"name": "ثبت درخواست جدید",
+			"short_name": "درخواست",
+			"description": "ثبت درخواست سرویس جدید",
+			"url": "/case/create",
+			"icons": [{ "src": "/assets/images/android-icon-192x192.png", "sizes": "192x192" }]
+		},
+		{
+			"name": "درخواست‌های جاری",
+			"short_name": "درخواست‌ها",
+			"description": "مشاهده لیست درخواست‌های جاری",
+			"url": "/case/index",
+			"icons": [{ "src": "/assets/images/android-icon-192x192.png", "sizes": "192x192" }]
+		},
+        {
+			"name": "آرشیو درخواست‌ها",
+			"short_name": "آرشیو",
+			"description": "مشاهده لیست آرشیو درخواست‌ها",
+			"url": "/case/archive",
+			"icons": [{ "src": "/assets/images/android-icon-192x192.png", "sizes": "192x192" }]
+        },
+        {
+			"name": "ثبت فاکتور جدید",
+			"short_name": "فاکتور",
+			"description": "ثبت فاکتور جدید",
+			"url": "/invoice/1/create",
+			"icons": [{ "src": "/assets/images/android-icon-192x192.png", "sizes": "192x192" }]
+        },
+		{
+			"name": "ثبت پیش‌فاکتور جدید",
+			"short_name": "فاکتور",
+			"description": "ثبت پیش‌فاکتور جدید",
+			"url": "/invoice/2/create",
+			"icons": [{ "src": "/assets/images/android-icon-192x192.png", "sizes": "192x192" }]
+		},
+		{
+			"name": "لیست فاکتورها",
+			"short_name": "فاکتورها",
+			"description": "لیست فاکتورها",
+			"url": "/invoice/1/index",
+			"icons": [{ "src": "/assets/images/android-icon-192x192.png", "sizes": "192x192" }]
+		},
+        {
+			"name": "لیست پیش‌فاکتورها",
+			"short_name": "پیش‌فاکتورها",
+			"description": "لیست پیش‌فاکتورها",
+			"url": "/invoice/2/index",
+			"icons": [{ "src": "/assets/images/android-icon-192x192.png", "sizes": "192x192" }]
+		}
+	]
+}

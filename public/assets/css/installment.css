@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Vazir-FD';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Vazir-FD.woff') format('woff');
+}
+
+* {
+    font-size: 1rem;
+}
+
+header {
+    margin: 10px;
+    background-color: #7c1886;
+    min-height: 10vh;
+    justify-content: center;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.header-dark {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+#ghestino-logo {
+    position: absolute;
+    max-width: 100px;
+}
+
+main {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+main *:not(.form-floating label) {
+    font-size: 1.2rem;
+}
+
+.accordion-button {
+    font-size: 1em;
+}
+
+.accordion-button:after {
+    width: 0;
+}
+
+#accordionTerm *, #accordionProcess * {
+    font-family: 'Vazir-FD', sans-serif !important;
+}
+
+#accordionTerm ul li:before {
+    margin-left: 7px;
+    content: "\2714";
+}
+
+#accordionCalculator * label {
+    font-family: 'Vazir-FD', sans-serif !important;
+}
+
+.date-picker-input {
+    display: inline-block !important;
+}
+
+.date-picker-icon {
+    display: inline-block;
+    font-size: 2rem !important;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+footer {
+    position: static !important;
+}
+
+@media screen and (orientation: landscape) {
+    header {
+        min-height: 10vh;
+        justify-content: center;
+    }
+
+    #ghestino-logo {
+        position: absolute;
+        max-width: 100px;
+    }
+}
+

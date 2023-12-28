@@ -1,0 +1,137 @@
+* {
+    font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bs-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-primary-border-subtle);
+}
+
+nav.navbar {
+    background-color: #fff200;
+}
+
+nav .navbar-text * {
+    font-size: .8rem;
+}
+
+#ghestino-logo {
+    width: 25vw;
+}
+
+.offcanvas-start {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+}
+
+.offcanvas-body {
+    padding: 0 !important;
+}
+
+.date-picker-input {
+    display: inline-block !important;
+}
+
+.date-picker-icon {
+    display: inline-block;
+    font-size: 2rem;
+    position: absolute;
+    top: -4px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.approval_label {
+    writing-mode: vertical-rl;
+    display: inline-block;
+}
+
+.offcanvas-body ul li a:hover {
+    color: #aaaaaa !important;
+}
+
+.nav-tabs .active {
+    border-color: var(--bs-primary)!important;
+    color: var(--bs-primary)!important;
+    background-color: var(--bs-primary-bg-subtle)!important;
+}
+
+.bg-svg {
+    z-index: 1000;
+    position: absolute;
+    top: 7px;
+    right: 14px;
+    color: var(--bs-gray-600);
+}
+
+a svg:hover, button.btn-link svg:hover {
+    fill: var(--bs-primary)!important;
+}
+
+.bg-gradient-up-down-danger {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, white 95%, var(--bs-danger-bg-subtle) 100%);
+}
+
+.bg-gradient-up-down-success {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, white 95%, var(--bs-success-bg-subtle) 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar-toggler-icon {
+        background-image: var(--bs-navbar-toggler-icon-bg) !important;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #yellow-box {
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+    .page-title {
+        background-color: var(--bs-yellow);
+    }
+    .bg-gradient-danger {
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, white 80%, var(--bs-danger-bg-subtle) 100%);
+    }
+    .bg-gradient-success {
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, white 80%, var(--bs-success-bg-subtle) 100%);
+    }
+}
+@media screen and (orientation: landscape) {
+    #yellow-box {
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 40px;
+
+    }
+    #yellow-box .menu {
+        scrollbar-width: none;
+    }
+    #yellow-box .menu::-webkit-scrollbar {
+        display: none;
+    }
+    .bg-gradient-danger {
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, white 80%, var(--bs-danger-bg-subtle) 100%);
+    }
+    .bg-gradient-success {
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, white 80%, var(--bs-success-bg-subtle) 100%);
+    }
+    .page-title {
+        background-color: var(--bs-secondary-bg-subtle);
+    }
+}
+
+
