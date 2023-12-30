@@ -1,5 +1,5 @@
 <nav class="container-fluid d-flex flex-column align-items-center">
-    <a href="{{route('case.index')}}" class="w-50 my-3"><img class="w-100" alt="قسطی‌نو سرویس" src="{{asset('images/logo.png')}}"></a>
+    <a href="{{route('admin.installment.index')}}" class="w-50 my-3"><img class="w-100" alt="قسطی‌نو سرویس" src="{{asset('images/logo.png')}}"></a>
     @if(auth('user')->user()->photo)
         <img src="data:image/jpeg;base64,{{base64_encode(auth('user')->user()->photo)}}" alt="{{auth('user')->user()->fullname}}" width="100" height="100"
              class="rounded-circle me-2 border border-2 border-primary p-1">
@@ -8,7 +8,6 @@
              class="rounded-circle me-2 border border-2 border-primary p-1">
     @endif
     <strong class="mt-2">{{auth('user')->user()->fullname}}</strong>
-    <span class="text-muted small">{{auth('user')->user()->department->name}}</span>
     <div class="w-100 vh-55 vh-xl-50 d-flex flex-column flex-shrink-0 overflow-y-scroll menu mt-3 pt-2 border-top border-secondary">
         @include('layout.menu')
     </div>

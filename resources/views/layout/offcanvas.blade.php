@@ -15,7 +15,6 @@
                  class="rounded-circle me-2 border border-2 border-primary p-1">
         @endif
         <strong class="mt-2">{{auth('user')->user()->fullname}}</strong>
-        <span class="text-muted small">{{auth('user')->user()->department->name}}</span>
         <div class="w-100 vh-55 vh-xl-50 d-flex flex-column flex-shrink-0 overflow-y-scroll menu mt-3 pt-2 border-top border-secondary">
             @include('layout.menu')
         </div>

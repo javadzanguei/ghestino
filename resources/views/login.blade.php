@@ -33,7 +33,7 @@
 <body class="container-fluid p-0">
 <div class="vw-100 vh-md-100 d-flex flex-column flex-md-row align-items-center">
     <div class="w-100 w-md-50 vh-50 vh-md-100 pt-5 pt-md-0 justify-content-center d-flex flex-md-column align-items-start align-items-md-center" style="background-color: var(--bs-yellow);" id="yellow-box">
-        <img class="w-75 w-md-50 p-5" alt="قسطی‌نو سرویس" src="{{asset('images/logo.png')}}">
+        <h1 class="h1">قسطی‌نو</h1>
         <a href="https://ghestino-group.com" class="d-none d-md-block border border-2 rounded-4 border-primary my-1 px-3 py-1" aria-current="page">
             <svg fill="currentColor" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                  width="16" height="16" viewBox="0 0 495.398 495.398" xml:space="preserve">
@@ -50,7 +50,7 @@
             صفحه اصلی
         </a>
     </div>
-    <div class="w-100 w-md-50 h-60 h-md-60 rounded-5" style="position: relative; background-color: #dfdfdf" id="login-box">
+    <div class="w-100 w-md-50 h-60 h-md-60 rounded-5 pt-3" style="position: relative; background-color: #dfdfdf" id="login-box">
         <livewire:login/>
     </div>
     <a href="https://ghestino-group.com" class="d-md-none d-block border border-2 rounded-4 border-primary my-1 px-3 py-1" aria-current="page">

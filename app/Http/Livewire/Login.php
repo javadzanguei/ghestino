@@ -10,7 +10,7 @@ class Login extends Component
 
     public function mount()
     {
-        $this->form = 'customer';
+        $this->form = 'user';
     }
     public function render()
     {

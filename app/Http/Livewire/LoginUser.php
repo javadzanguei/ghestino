@@ -25,7 +25,7 @@ class LoginUser extends Component
             $user->user_agent = request()->userAgent();
             $user->last_login = date("Y-m-d H:i:s", time());
             $user->save();
-            return redirect()->route('case.index');
+            return redirect()->route('admin.installment.index');
         } else {
             $this->emitTo( 'captcha','refresh');
             toastr()->addError('شماره همراه یا کلمه عبور شما اشتباه است.')->setTitle('خطا');
