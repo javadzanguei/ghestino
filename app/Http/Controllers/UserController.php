@@ -26,13 +26,7 @@ class UserController extends Controller
             'mobile' => 'required|ir_mobile|unique:users,mobile',
             'password' => 'required|string',
             'access' => 'required|in:1,2',
-            'department_id' => 'required|int|exists:departments,id',
             'active' => 'nullable|int|in:1',
-            'view_service_messages' => 'nullable|int|in:1',
-            'view_all_services' => 'nullable|int|in:1',
-            'view_all_invoices' => 'nullable|int|in:1',
-            'view_stats' => 'nullable|int|in:1',
-            'review_employees_leave' => 'nullable|int|in:1',
             'superadmin' => 'nullable|int|in:1',
         ], [
             'mobile.unique' => 'کاربری با این شماره وجود دارد.'
@@ -42,13 +36,7 @@ class UserController extends Controller
             'mobile' => $validated['mobile'],
             'password' => Hash::make($validated['password']),
             'access' => $validated['access'],
-            'department_id' => $validated['department_id'],
             'active' => $validated['active'] ?? 0,
-            'view_service_messages' => $validated['view_service_messages'] ?? 0,
-            'view_all_services' => $validated['view_all_services'] ?? 0,
-            'view_all_invoices' => $validated['view_all_invoices'] ?? 0,
-            'view_stats' => $validated['view_stats'] ?? 0,
-            'review_employees_leave' => $validated['review_employees_leave'] ?? 0,
             'superadmin' => $validated['superadmin'] ?? 0,
         ]))
             toastr()->addSuccess('کاربر جدید ثبت شد.')->setTitle('موفق');
@@ -71,13 +59,7 @@ class UserController extends Controller
             'mobile' => 'required|ir_mobile',
             'password' => 'nullable|string',
             'access' => 'required|in:1,2',
-            'department_id' => 'required|int|exists:departments,id',
             'active' => 'nullable|boolean',
-            'view_service_messages' => 'nullable|boolean',
-            'view_all_services' => 'nullable|boolean',
-            'view_all_invoices' => 'nullable|boolean',
-            'view_stats' => 'nullable|int|in:1',
-            'review_employees_leave' => 'nullable|boolean',
             'superadmin' => 'nullable|boolean',
         ])->validate();
 
@@ -88,13 +70,7 @@ class UserController extends Controller
                 'mobile' => $validated['mobile'],
                 'password' => Hash::make($validated['password']),
                 'access' => $validated['access'],
-                'department_id' => $validated['department_id'],
                 'active' => $validated['active'] ?? 0,
-                'view_service_messages' => $validated['view_service_messages'] ?? 0,
-                'view_all_services' => $validated['view_all_services'] ?? 0,
-                'view_all_invoices' => $validated['view_all_invoices'] ?? 0,
-                'view_stats' => $validated['view_stats'] ?? 0,
-                'review_employees_leave' => $validated['review_employees_leave'] ?? 0,
                 'superadmin' => $validated['superadmin'] ?? 0,
             ]))
                 toastr()->addSuccess('کاربر با موفقیت ویرایش شد.')->setTitle('موفق');
@@ -105,13 +81,7 @@ class UserController extends Controller
                 'fullname' => $validated['fullname'],
                 'mobile' => $validated['mobile'],
                 'access' => $validated['access'],
-                'department_id' => $validated['department_id'],
                 'active' => $validated['active'] ?? 0,
-                'view_service_messages' => $validated['view_service_messages'] ?? 0,
-                'view_all_services' => $validated['view_all_services'] ?? 0,
-                'view_all_invoices' => $validated['view_all_invoices'] ?? 0,
-                'view_stats' => $validated['view_stats'] ?? 0,
-                'review_employees_leave' => $validated['review_employees_leave'] ?? 0,
                 'superadmin' => $validated['superadmin'] ?? 0,
             ]))
                 toastr()->addSuccess('کاربر با موفقیت ویرایش شد.')->setTitle('موفق');
