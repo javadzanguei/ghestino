@@ -14,8 +14,6 @@ header {
     background-color: #7c1886;
     min-height: 10vh;
     justify-content: center;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
 }
 
 .header-dark {
@@ -37,27 +35,6 @@ main *:not(.form-floating label) {
     font-size: 1.2rem;
 }
 
-.accordion-button {
-    font-size: 1em;
-}
-
-.accordion-button:after {
-    width: 0;
-}
-
-#accordionTerm *, #accordionProcess * {
-    font-family: 'Vazir-FD', sans-serif !important;
-}
-
-#accordionTerm ul li:before {
-    margin-left: 7px;
-    content: "\2714";
-}
-
-#accordionCalculator * label {
-    font-family: 'Vazir-FD', sans-serif !important;
-}
-
 .date-picker-input {
     display: inline-block !important;
 }
@@ -69,6 +46,24 @@ main *:not(.form-floating label) {
     top: 5px;
     left: 5px;
     cursor: pointer;
+}
+
+form input[type=text]:enabled,
+form input[type=radio]:not(:checked),
+.form-select {
+    background-color: white!important;
+}
+
+.form-range {
+
+}
+
+.form-floating > label, .form-floating:focus > label, .form-floating:focus > label::after {
+    background-color: transparent!important;
+}
+
+.form-floating:focus > label::after, .form-floating > label::after {
+    content: none!important;
 }
 
 footer {

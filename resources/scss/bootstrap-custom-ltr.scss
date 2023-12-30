@@ -253,4 +253,9 @@ $utilities: (
     ),
 );
 
+$form-range-thumb-width: 1.3rem;
+$form-range-track-bg: $white;
+$form-range-thumb-bg: $white;
+$form-range-thumb-border: 6px solid $blue;
+
 @import "node_modules/bootstrap/scss/bootstrap";

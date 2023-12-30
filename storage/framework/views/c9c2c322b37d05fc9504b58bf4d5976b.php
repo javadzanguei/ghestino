@@ -13,55 +13,31 @@
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col">
-                <label for="prepayment-50" class="col-12 col-sm-4 col-form-label col-form-label-lg">میزان پیش پرداخت</label>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="prepayment" id="prepayment-1-3" value="13">
-                    <label class="form-check-label" for="prepayment-1-3">یک سوم مبلغ</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="prepayment" id="prepayment-1-2" value="12" checked>
-                    <label class="form-check-label" for="prepayment-1-2">نصف مبلغ</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="prepayment" id="prepayment-2-3" value="23">
-                    <label class="form-check-label" for="prepayment-2-3">دو سوم مبلغ</label>
-                </div>
+            <div class="col-12 col-sm-5">
+                <label for="prepayment" class="">
+                    میزان پیش پرداخت
+                    (<span id="prepayment-value">نصف مبلغ</span>)
+                </label>
             </div>
-        </div>
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">تعداد اقساط (با چک صیادی به صورت ماه به ماه)</label>
-            <div class="row">
-                <div class="col">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="installment" id="installment-1" value="1">
-                        <label class="form-check-label" for="installment-1">1 ماه</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="installment" id="installment-2" value="2">
-                        <label class="form-check-label" for="installment-2">2 ماه</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="installment" id="installment-3" value="3">
-                        <label class="form-check-label" for="installment-3">3 ماه</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="installment" id="installment-4" value="4" checked>
-                        <label class="form-check-label" for="installment-4">4 ماه</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="installment" id="installment-5" value="5">
-                        <label class="form-check-label" for="installment-5">5 ماه</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="installment" id="installment-6" value="6">
-                        <label class="form-check-label" for="installment-6">6 ماه</label>
-                    </div>
-                </div>
+            <div class="col-12 col-sm-7">
+                <input type="range" id="prepayment" class="form-range" min="1" max="3" step="1" value="2"
+                onchange="document.getElementById('prepayment-value').innerText=
+                (this.value==1)?'یک سوم مبلغ':(this.value==2)?'نصف مبلغ':'دو سوم مبلغ'">
             </div>
         </div>
         <div class="row mb-3">
-            <button onclick="calculate()" type="button" class="btn btn-lg btn-success col-10 col-6 mx-auto px-5">محاسبه اقساط</button>
+            <div class="col-12 col-sm-5">
+                <label for="installment" class="form-label">تعداد اقساط
+                    (<span id="installment-value">شش</span>  ماهه)
+                </label>
+            </div>
+            <div class="col-12 col-sm-7">
+                <input type="range" id="installment" class="form-range" min="1" max="12" step="1" value="6"
+                       onchange="document.getElementById('installment-value').innerText=numberToLetter(this.value)">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <button onclick="calculate()" type="button" class="btn btn-lg btn-primary col-10 col-6 mx-auto px-5">محاسبه اقساط</button>
         </div>
         <div class="row mb-3">
             <label for="calculate_prepayment" class="col-md-6 col-form-label col-form-label-lg">مبلغ نقدی به ریال</label>
@@ -89,7 +65,7 @@
         function numberToLetter(number) {
             if(number < 1000) {
                 document.getElementById('num2persian').innerText = '';
-                return false;
+                return number.num2persian();
             }
             let letter = number.num2persian() + ' ریال' + ' (' + (number / 10).num2persian() + ' تومان)'
             document.getElementById('num2persian').innerText = letter;
