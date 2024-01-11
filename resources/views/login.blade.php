@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>قسطی‌نو سرویس</title>
+    <title>سرویس قسطی</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{csrf_token()}}">
     <link rel="manifest" href="/manifest.webmanifest">
@@ -33,7 +33,7 @@
 <body class="container-fluid p-0">
 <div class="vw-100 vh-md-100 d-flex flex-column flex-md-row align-items-center">
     <div class="w-100 w-md-50 vh-50 vh-md-100 pt-5 pt-md-0 justify-content-center d-flex flex-md-column align-items-start align-items-md-center" style="background-color: var(--bs-yellow);" id="yellow-box">
-        <h1 class="h1">قسطی‌نو</h1>
+        <h1 class="h1">سرویس قسطی</h1>
         <a href="https://ghestino-group.com" class="d-none d-md-block border border-2 rounded-4 border-primary my-1 px-3 py-1" aria-current="page">
             <svg fill="currentColor" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                  width="16" height="16" viewBox="0 0 495.398 495.398" xml:space="preserve">

@@ -2,7 +2,7 @@
 <html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>قسطی‌نو سرویس - فروش اقساطی</title>
+    <title>سرویس قسطی - فروش اقساطی</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.webmanifest">
     <link rel="apple-touch-icon" href="{{asset('ghestino_icon_x192.png')}}"/>
@@ -20,7 +20,7 @@
 </head>
 <body class="container-fluid p-0">
     <header class="d-flex align-items-center">
-        <h3 class="text-white">قسطی‌نو</h3>
+        <h3 class="text-white">سرویس قسطی</h3>
     </header>
     <main>
         <a name="calculator"></a>
@@ -78,7 +78,7 @@
     <footer class="d-flex justify-content-around">
         <div id="copyright">
             این سرویس متعلق به
-            <a class="text-decoration-none" target="_blank" href="/">گروه قسطی‌نو</a>
+            <a class="text-decoration-none" target="_blank" href="/">گروه سرویس قسطی</a>
             است.
         </div>
     </footer>

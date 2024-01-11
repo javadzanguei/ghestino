@@ -6,7 +6,7 @@
                 aria-label="Close"></button>
     </div>
     <div class="offcanvas-body d-flex flex-column align-items-center">
-        <img class="w-50 my-3" alt="قسطی‌نو سرویس" src="{{asset('images/logo.png')}}">
+        <img class="w-50 my-3" alt="سرویس قسطی" src="{{asset('images/logo.png')}}">
         @if(auth('user')->user()->photo)
             <img src="data:image/jpeg;base64,{{base64_encode(auth('user')->user()->photo)}}" alt="{{auth('user')->user()->fullname}}" width="100" height="100"
                  class="rounded-circle me-2 border border-2 border-primary p-1">

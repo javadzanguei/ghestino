@@ -1,5 +1,5 @@
 <nav class="container-fluid d-flex flex-column align-items-center">
-    <img class="w-50 my-3" alt="قسطی‌نو سرویس" src="{{asset('images/logo.png')}}">
+    <img class="w-50 my-3" alt="سرویس قسطی" src="{{asset('images/logo.png')}}">
     <img src="https://i.pravatar.cc/100" alt="" width="100" height="100"
          class="rounded-circle me-2 border border-2 border-primary p-1">
     <strong class="mt-2">{{auth('customer')->user()->fullname}}</strong>

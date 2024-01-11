@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-    <title>قسطی‌نو سرویس - صفحه کاربری</title>
+    <title>سرویس قسطی - صفحه کاربری</title>
     @include('layout.header')
     <style>
         .offline-alert, #unavailable-alert {
