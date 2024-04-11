@@ -1,17 +1,10 @@
-@font-face {
-    font-family: 'Vazir-FD';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/assets/fonts/Vazir-FD.woff') format('woff');
-}
-
 * {
     font-size: 1rem;
 }
 
 header {
     margin: 10px;
-    background-color: #7c1886;
+    background-color: #043687;
     min-height: 10vh;
     justify-content: center;
 }

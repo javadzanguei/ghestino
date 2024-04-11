@@ -1,41 +1,48 @@
 @font-face {
+    font-family: 'Vazir-FD';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Vazir-FD.woff') format('woff');
+}
+
+@font-face {
     font-family: 'Vazir';
     font-style: normal;
     font-weight: 400;
-    src: url('/ghest/assets/fonts/Vazir.woff') format('woff');
+    src: url('/assets/fonts/Vazir.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'VazirBold';
+    font-family: 'Vazir';
     font-style: normal;
     font-weight: 700;
-    src: url('/ghest/assets/fonts/Vazir-Bold.woff') format('woff');
+    src: url('/assets/fonts/Vazir-Bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'VazirBlack';
+    font-family: 'Vazir';
     font-style: normal;
     font-weight: 900;
-    src: url('/ghest/assets/fonts/Vazir-Black.woff') format('woff');
+    src: url('/assets/fonts/Vazir-Black.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'VazirMedium';
+    font-family: 'Vazir';
     font-style: normal;
     font-weight: 500;
-    src: url('/ghest/assets/fonts/Vazir-Medium.woff') format('woff');
+    src: url('/assets/fonts/Vazir-Medium.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'VazirLight';
+    font-family: 'Vazir';
     font-style: normal;
     font-weight: 300;
-    src: url('/ghest/assets/fonts/Vazir-Light.woff') format('woff');
+    src: url('/assets/fonts/Vazir-Light.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'VazirThin';
+    font-family: 'Vazir';
     font-style: normal;
     font-weight: 100;
-    src: url('/ghest/assets/fonts/Vazir-Thin.woff') format('woff');
+    src: url('/assets/fonts/Vazir-Thin.woff') format('woff');
 }

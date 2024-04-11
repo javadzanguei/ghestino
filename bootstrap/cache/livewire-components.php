@@ -1,0 +1,16 @@
+<?php return array (
+  'admin.employee.leave-edit' => 'App\\Http\\Livewire\\Admin\\Employee\\LeaveEdit',
+  'admin.employee.leave-register' => 'App\\Http\\Livewire\\Admin\\Employee\\LeaveRegister',
+  'admin.employee.leaves' => 'App\\Http\\Livewire\\Admin\\Employee\\Leaves',
+  'admin.installment.index' => 'App\\Http\\Livewire\\Admin\\Installment\\Index',
+  'admin.user.index' => 'App\\Http\\Livewire\\Admin\\User\\Index',
+  'captcha' => 'App\\Http\\Livewire\\Captcha',
+  'cities.county' => 'App\\Http\\Livewire\\Cities\\County',
+  'cities.province' => 'App\\Http\\Livewire\\Cities\\Province',
+  'installment.calculator' => 'App\\Http\\Livewire\\Installment\\Calculator',
+  'installment.request' => 'App\\Http\\Livewire\\Installment\\Request',
+  'login' => 'App\\Http\\Livewire\\Login',
+  'login-customer' => 'App\\Http\\Livewire\\LoginCustomer',
+  'login-user' => 'App\\Http\\Livewire\\LoginUser',
+  'offline' => 'App\\Http\\Livewire\\Offline',
+);

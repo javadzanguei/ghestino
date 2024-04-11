@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>سرویس قسطی - فروش اقساطی</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/bootstrap-custom.css')}}">
-    <link rel="stylesheet" href="{{asset('css/installment.css')}}">
-    <link rel="stylesheet" href="{{asset('css/mds.bs.datetimepicker.style.css')}}">
-    @livewireStyles
+    <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('css/bootstrap-custom.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('css/installment.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('css/mds.bs.datetimepicker.style.css')); ?>">
+    <?php echo \Livewire\Livewire::styles(); ?>
+
 </head>
 <body class="container-fluid p-0">
     <header class="d-flex align-items-center">
@@ -21,7 +22,21 @@
                 محاسبه‌گر اقساط
             </div>
             <div class="p-3">
-                <livewire:installment.calculator/>
+                <?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('installment.calculator', [])->html();
+} elseif ($_instance->childHasBeenRendered('PFru1P7')) {
+    $componentId = $_instance->getRenderedChildComponentId('PFru1P7');
+    $componentTag = $_instance->getRenderedChildComponentTagName('PFru1P7');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('PFru1P7');
+} else {
+    $response = \Livewire\Livewire::mount('installment.calculator', []);
+    $html = $response->html();
+    $_instance->logRenderedChild('PFru1P7', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
             </div>
         </div>
         <a name="conditions"></a>
@@ -63,7 +78,21 @@
                 ثبت درخواست اعتبارسنجی (اطلاعات صاحب دسته چک)
             </div>
             <div class="p-3">
-                <livewire:installment.request/>
+                <?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('installment.request', [])->html();
+} elseif ($_instance->childHasBeenRendered('2IjRERo')) {
+    $componentId = $_instance->getRenderedChildComponentId('2IjRERo');
+    $componentTag = $_instance->getRenderedChildComponentTagName('2IjRERo');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('2IjRERo');
+} else {
+    $response = \Livewire\Livewire::mount('installment.request', []);
+    $html = $response->html();
+    $_instance->logRenderedChild('2IjRERo', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
             </div>
         </div>
     </main>
@@ -74,9 +103,10 @@
             است.
         </div>
     </footer>
-    <script src="{{asset('js/app.js')}}"></script>
-    @livewireScripts
-    @stack('scripts')
+    <script src="<?php echo e(asset('js/app.js')); ?>"></script>
+    <?php echo \Livewire\Livewire::scripts(); ?>
+
+    <?php echo $__env->yieldPushContent('scripts'); ?>
     <script>
         (function () {
             'use strict'
@@ -96,3 +126,4 @@
     </script>
 </body>
 </html>
+<?php /**PATH D:\dev\workspace\laragon\htdocs\ghestino\resources\views/installment/index.blade.php ENDPATH**/ ?>

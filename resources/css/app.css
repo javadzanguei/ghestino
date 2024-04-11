@@ -2,11 +2,12 @@
 @import 'fonts.css';
 
 body * {
-    font-family: Vazir, "Segoe UI", Calibri, system-ui !important;
+    font-family: Vazir-FD, Vazir, "Segoe UI", Calibri, system-ui !important;
 }
 
 h1, h2, h3, h4, h5, h6, strong, b {
-    font-family: VazirBold, system-ui !important;
+    font-family: Vazir, system-ui !important;
+    font-weight: 900;
 }
 
 body {
