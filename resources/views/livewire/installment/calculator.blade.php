@@ -1,9 +1,9 @@
-<div class="p-3 col-sm-10 col-md-10 col-lg-7 mx-auto bg-secondary bg-opacity-25" style="border-radius: 5px; ">
+<div class="p-3 col-sm-10 col-md-10 col-lg-7 mx-auto bg-secondary-subtle bg-opacity-25" style="border-radius: 5px; ">
     <form onsubmit="return false;" name="calculator">
         <div class="row mb-3">
             <label for="price" class="col-sm-5 col-form-label col-form-label-lg">مبلغ خرید به ریال</label>
             <div class="col-sm-7">
-                <input dir="ltr" type="text" maxlength="10" onkeyup="numberToLetter(this.value)"
+                <input dir="ltr" type="text" maxlength="20" onkeyup="numberToLetter(this.value);"
                        class="form-control form-control-lg" name="price" id="price" autocomplete="off">
             </div>
         </div>
@@ -16,24 +16,28 @@
             <div class="col-12 col-sm-5">
                 <label for="prepayment" class="">
                     میزان پیش پرداخت
-                    (<span id="prepayment-value">نصف مبلغ</span>)
                 </label>
             </div>
             <div class="col-12 col-sm-7">
-                <input type="range" id="prepayment" name="prepayment" class="form-range" min="1" max="3" step="1" value="2"
-                onchange="document.getElementById('prepayment-value').innerText=
-                (this.value==1)?'یک سوم مبلغ':(this.value==2)?'نصف مبلغ':'دو سوم مبلغ'">
+                <input type="range" id="prepayment" name="prepayment" class="form-range" min="1" max="3" step="1" value="2">
+                <div class="d-flex justify-content-between">
+                    <span>&frac13;</span>
+                    <span>&frac12;</span>
+                    <span>&frac23;</span>
+                </div>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col-12 col-sm-5">
-                <label for="installment" class="form-label">تعداد اقساط
-                    (<span id="installment-value">شش</span>  ماهه)
-                </label>
+                <label for="installment" class="form-label">تعداد اقساط</label>
             </div>
             <div class="col-12 col-sm-7">
                 <input type="range" id="installment" name="installment" class="form-range" min="1" max="12" step="1" value="6"
-                       onchange="document.getElementById('installment-value').innerText=numberToLetter(this.value)">
+                       oninput="this.form.querySelector('#installment-month-label').innerText = this.value + ' ماه';">
+                <div class="d-flex justify-content-between">
+                    <span>1</span>
+                    <span id="installment-month-label" style="font-size: smaller;">6 ماه</span>
+                </div>
             </div>
         </div>
         <div class="row mb-3">

@@ -1,4 +1,4 @@
-<div class="p-3 py-5 col-lg-10 mx-auto bg-secondary bg-opacity-25" style="border-radius: 5px; ">
+<div class="p-3 py-5 col-lg-10 mx-auto bg-light bg-opacity-25" style="border-radius: 5px; ">
     <form wire:submit.prevent="save" name="request" class="needs-validation">
         <div class="row g-2">
             <div class="col-12 col-sm-6 mb-3">
@@ -39,7 +39,12 @@
                     <label for="birth_date_text">
                         تاریخ تولد
                     </label>
-                    <span id="birth_date_icon" class="date-picker-icon" wire:ignore>📅</span>
+                    <span id="birth_date_icon" class="date-picker-icon" wire:ignore>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                          <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                          <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>
+                    </span>
                 </div>
             </div>
             <div class="col-12 col-sm-6 mb-3">
@@ -83,11 +88,9 @@
             </div>
             <div class="col-12 col-sm-6 mb-3">
                 <label for="cheque_photo" class="form-label @error('cheque_photo') text-danger @enderror">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         aria-hidden="true"
-                         role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
-                        <path fill="#d63384"
-                              d="M864 260H728l-32.4-90.8a32.07 32.07 0 0 0-30.2-21.2H358.6c-13.5 0-25.6 8.5-30.1 21.2L296 260H160c-44.2 0-80 35.8-80 80v456c0 44.2 35.8 80 80 80h704c44.2 0 80-35.8 80-80V340c0-44.2-35.8-80-80-80zM512 716c-88.4 0-160-71.6-160-160s71.6-160 160-160s160 71.6 160 160s-71.6 160-160 160zm-96-160a96 96 0 1 0 192 0a96 96 0 1 0-192 0z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"/>
                     </svg>
                     تصویر یک برگ چک خام متقاضی را بارگذاری نمایید
                 </label>
@@ -97,11 +100,9 @@
             </div>
             <div class="col-12 col-sm-6 mb-3">
                 <label for="id_card_photo" class="form-label @error('id_card_photo') text-danger @enderror">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         aria-hidden="true"
-                         role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
-                        <path fill="#d63384"
-                              d="M864 260H728l-32.4-90.8a32.07 32.07 0 0 0-30.2-21.2H358.6c-13.5 0-25.6 8.5-30.1 21.2L296 260H160c-44.2 0-80 35.8-80 80v456c0 44.2 35.8 80 80 80h704c44.2 0 80-35.8 80-80V340c0-44.2-35.8-80-80-80zM512 716c-88.4 0-160-71.6-160-160s71.6-160 160-160s160 71.6 160 160s-71.6 160-160 160zm-96-160a96 96 0 1 0 192 0a96 96 0 1 0-192 0z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"/>
                     </svg>
                     تصویر کارت ملی متقاضی را بارگذاری نمایید
                 </label>
@@ -140,7 +141,7 @@
                     <label for="notify_mobile">شماره همراه جهت اطلاع‌رسانی</label>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 mb-3 d-flex">
+            <div class="col-12 col-sm-6 mb-3 d-flex justify-content-center">
                 <input type="submit" id="submit" class="btn btn-lg btn-primary px-5" value="ثبت درخواست" @if(!$confirm) disabled @endif>
             </div>
         </div>

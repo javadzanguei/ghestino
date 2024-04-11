@@ -30,12 +30,12 @@
                 شرایط خرید اقساطی
             </div>
             <div class="py-3">
-                <ul style="list-style: none;">
+                <ol>
                     <li>هر شخص از طریق اعتبارسنجی سایت (قدرت قسط‌دهی و گردش حساب) تا سقف سیصد میلیون ریال (سی میلیون تومان) می‌تواند خرید اقساطی انجام دهد.</li>
                     <li>خرید اقساطی صرفا با چک صیادی و بنفش تا سقف شش فقره چک ماهیانه امکان‌پذیر است.</li>
                     <li>شماره همراه حتما باید به نام شخص صاحب دسته چک باشد.</li>
                     <li>صاحب دسته چک نباید سوء سابقه بانکی و اعتباری (شامل چک برگشتی، اقساط معوق، حساب مسدودی) داشته باشد.</li>
-                </ul>
+                </ol>
             </div>
         </div>
         <div class="border rounded-2 mb-3">
@@ -69,8 +69,8 @@
     </main>
     <footer class="d-flex justify-content-around">
         <div id="copyright">
-            این سرویس متعلق به
-            <a class="text-decoration-none" target="_blank" href="/">گروه سرویس قسطی</a>
+            سرویس قسط‌کار محصولی از
+            <a class="text-decoration-none" target="_blank" href="https://karbekr.ir/ghestkar">کاربکر</a>
             است.
         </div>
     </footer>

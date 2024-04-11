@@ -25,15 +25,15 @@
                 <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('installment.calculator', [])->html();
-} elseif ($_instance->childHasBeenRendered('PFru1P7')) {
-    $componentId = $_instance->getRenderedChildComponentId('PFru1P7');
-    $componentTag = $_instance->getRenderedChildComponentTagName('PFru1P7');
+} elseif ($_instance->childHasBeenRendered('nI2DL4l')) {
+    $componentId = $_instance->getRenderedChildComponentId('nI2DL4l');
+    $componentTag = $_instance->getRenderedChildComponentTagName('nI2DL4l');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('PFru1P7');
+    $_instance->preserveRenderedChild('nI2DL4l');
 } else {
     $response = \Livewire\Livewire::mount('installment.calculator', []);
     $html = $response->html();
-    $_instance->logRenderedChild('PFru1P7', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('nI2DL4l', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -45,12 +45,12 @@ echo $html;
                 شرایط خرید اقساطی
             </div>
             <div class="py-3">
-                <ul style="list-style: none;">
+                <ol>
                     <li>هر شخص از طریق اعتبارسنجی سایت (قدرت قسط‌دهی و گردش حساب) تا سقف سیصد میلیون ریال (سی میلیون تومان) می‌تواند خرید اقساطی انجام دهد.</li>
                     <li>خرید اقساطی صرفا با چک صیادی و بنفش تا سقف شش فقره چک ماهیانه امکان‌پذیر است.</li>
                     <li>شماره همراه حتما باید به نام شخص صاحب دسته چک باشد.</li>
                     <li>صاحب دسته چک نباید سوء سابقه بانکی و اعتباری (شامل چک برگشتی، اقساط معوق، حساب مسدودی) داشته باشد.</li>
-                </ul>
+                </ol>
             </div>
         </div>
         <div class="border rounded-2 mb-3">
@@ -81,15 +81,15 @@ echo $html;
                 <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('installment.request', [])->html();
-} elseif ($_instance->childHasBeenRendered('2IjRERo')) {
-    $componentId = $_instance->getRenderedChildComponentId('2IjRERo');
-    $componentTag = $_instance->getRenderedChildComponentTagName('2IjRERo');
+} elseif ($_instance->childHasBeenRendered('FHEwOkB')) {
+    $componentId = $_instance->getRenderedChildComponentId('FHEwOkB');
+    $componentTag = $_instance->getRenderedChildComponentTagName('FHEwOkB');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('2IjRERo');
+    $_instance->preserveRenderedChild('FHEwOkB');
 } else {
     $response = \Livewire\Livewire::mount('installment.request', []);
     $html = $response->html();
-    $_instance->logRenderedChild('2IjRERo', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('FHEwOkB', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -98,8 +98,8 @@ echo $html;
     </main>
     <footer class="d-flex justify-content-around">
         <div id="copyright">
-            این سرویس متعلق به
-            <a class="text-decoration-none" target="_blank" href="/">گروه سرویس قسطی</a>
+            سرویس قسط‌کار محصولی از
+            <a class="text-decoration-none" target="_blank" href="https://karbekr.ir/ghestkar">کاربکر</a>
             است.
         </div>
     </footer>
